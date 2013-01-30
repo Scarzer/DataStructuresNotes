@@ -60,10 +60,10 @@
     -Frequently a programmer must communicate precisely what a function accomplishes, without any indication of how the fucntion does it's work 
     
 
-""" 
+'''cpp 
     int *p;
     int a[100];
 
     p = a + 50 // p = &a[50];
 
-"""
+'''
