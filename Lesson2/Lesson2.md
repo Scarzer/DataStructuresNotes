@@ -19,34 +19,34 @@
         * derpending on many factors
 
 ### Example - Quiz
-    * Printout all item in an interger array of saize N
+* Printout all item in an interger array of saize N
 
-    ``` 
-    for (int i = 0; i < N; i++){
-        val = a[i];
-        cout << val;
-    }
-    ```
+```c++
+for (int i = 0; i < N; i++){
+    val = a[i];
+    cout << val;
+}
+```
 
-    * Frequent linear pattern
-        * A loop that does a fixed amount of operations N times requires O(N) time
+* Frequent linear pattern
+    * A loop that does a fixed amount of operations N times requires O(N) time
 
-    * Another example
-    ``` 
-    for(int i = 0; i < strlen(str); i++){
-    c = str[i];
-    cout << c;
-    }
-    ```
-        * This example is horrible because there is a function call inside!    
+* Another example
+```c++
+for(int i = 0; i < strlen(str); i++){
+c = str[i];
+cout << c;
+}
+```
+    * This example is horrible because there is a function call inside!    
     
 
 ### Worst Case, Average Case, and Best Case
-    * Search a number x in an interger array of size N
-    ```
-    for(int i = 0; (i<N)&&(a[i] != x); i++){
-    if (i<N) cout << "Number " << x << "is at location " << i << endl;
-    else cout << "Not Found!" << endl;
-    }
-    ```
+* Search a number x in an interger array of size N
+```c++
+for(int i = 0; (i<N)&&(a[i] != x); i++){
+if (i<N) cout << "Number " << x << "is at location " << i << endl;
+else cout << "Not Found!" << endl;
+}
+```
 
