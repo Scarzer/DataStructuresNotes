@@ -7,28 +7,28 @@
 - How
 
 ### What?
--Data Structures
+* Data Structures
     Specificiaton, design, implementation and uses of: Arrays, lists, queues, stacks, trees
 
-*OOP and C++
+* OOP and C++
    * C++ classes, container classes, Big Three!
    * All of this will be implemented in C++
    * C++ can be used to write fantastic GUIs 
    * C++ is one of the most mature of the languages
 
-*Standard Template Library
+* Standard Template Library
     Templates, iterators
     ADTs in our DS course cut-down verion of STL
 
-*Recursion, Searching and Sorting algorithms 
+* Recursion, Searching and Sorting algorithms 
     Important techniques in many applications 
 
 ### Why?
 
-*Data Structures(How to organize data)
+* Data Structures(How to organize data)
     Algorithms(How to manipulate data) are the cores of todays computer programming
 
-*The behavior of Abstract Data Types( ADTs) in our data structures cours is a cut down version of the STL
+* The behavior of Abstract Data Types( ADTs) in our data structures cours is a cut down version of the STL
 
 ### Goals (Where)
    * We want to understand the data types inside out
