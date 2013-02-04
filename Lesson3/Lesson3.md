@@ -49,7 +49,8 @@
 
 * .cpp files
     * The CPP file will hold all the important crap that you ned
-    ```c++
+
+    ``` c++
     #include <iostream.h>
     #include <stdlib.h>
     #include "point.h"
@@ -64,6 +65,3 @@
         
         }
     ```
-    
-
-    }
