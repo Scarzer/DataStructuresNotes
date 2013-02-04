@@ -87,3 +87,13 @@
 * The Memember functions of a class are found inside of a .cpp file
 * BE VERY CAREFUL WHEN YOU CHANGE PUBLIC STUFF!!!! Thats the interface to the outside world!
 
+* .cpp body
+    * First Function
+    ``` c++
+        // We need to set up "point::" because this signifies the namespace for the function
+        // This is what the compiler uses to keep track of what functions that are being used at the moment
+        void point::setPosition(double x, double y)
+        {
+            _x = x;
+            _y = y;
+        }
