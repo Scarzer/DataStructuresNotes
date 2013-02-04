@@ -19,3 +19,7 @@ We're using gc++ !!
 ## Schedule (Tentative Schedule)
 Check on the website!!
 http://www-cs.engr.ccny.cuny.edu/~wolberg/cs212/index.html
+
+## Assignments
+1. 
+    Due on February 20th

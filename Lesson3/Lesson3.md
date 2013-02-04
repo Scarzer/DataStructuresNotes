@@ -90,10 +90,32 @@
 * .cpp body
     * First Function
     ``` c++
+        // This is a sample .cpp file that we would have
         // We need to set up "point::" because this signifies the namespace for the function
         // This is what the compiler uses to keep track of what functions that are being used at the moment
-        void point::setPosition(double x, double y)
-        {
+        
+        void point::setPosition(double x, double y){
             _x = x;
             _y = y;
         }
+        
+        // This function will fail compilation because it is not in the .h file! 
+        void point::origin(){
+            setPosition(0.0, 0.0);
+        }
+
+        double point::x() const{
+            _x = 0.0;
+            _y = 0.0;
+        }
+
+        double point::y() const{
+            _x = 0.0;
+            _y = 0.0
+        }
+    ```
+* Classes have member values and functions.
+* We need to know how to declare a new class type, and how to implement its member functions, and how to use the class type
+
+
+        
