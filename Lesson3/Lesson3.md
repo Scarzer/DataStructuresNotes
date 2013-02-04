@@ -67,7 +67,23 @@
 
         // Now they're doing something
         p1.setPosition(-1.0, 0.8);
-        
+        cout << p1.x() << p1.y() << endl;
+        p2.setPosition(p1.x(), p1.y());
+        cout << p2.x() << p2.y() << endl;
+        p2.shift(1.3, -1.4);
+        cout << p2.x() << p2.y() << endl;
+
         }
     ```
+## What do we know about Objects?
+
+* Class = Data + Member Functions
+* We know how to define a new class type (Look above) and than define it in a header file
+* We know how to use a header file, which declares instances of the class type
+* We know how to "activate" the functions
+* We now have to learn how to implement our functuons
+
+### Creating Functions
+* The Memember functions of a class are found inside of a .cpp file
+* BE VERY CAREFUL WHEN YOU CHANGE PUBLIC STUFF!!!! Thats the interface to the outside world!
 
