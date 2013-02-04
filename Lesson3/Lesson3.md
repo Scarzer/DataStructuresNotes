@@ -33,27 +33,32 @@
     class point{
     // This all goes into a .h header file!!
         public: // Public variables that EVERYBODY can get a turn with :P
-            void init( double initX, double initY);
+            // Book verison => void init( double initX, double initY);
+            void setPositon (double x, double y); //Same function as above, but a more accept naming convention
             void shift( double dx, double dy);
-            double getX() const;
+            double getX() const;    // Tells the compiler to keep the variables constant!
             double getY() const;
             // All the function bodies will be somewhere else
 
         private: // This is so that the only way to access the values, is using functions! Typically getter/setters
-            double x;
-            double y;
+            double _x;
+            double _y;
     };
+    // Do not forget to put the semicolon
     ```
+        * Keep variables private, keep the member functions out in the public!
     * The header file is where we are going to be keeping the Postconditions and the Preconditions. This is going to be the documetntations
     * The actual shtuffz are going to be in .cpp files! 
 
 * .cpp files
-    * The CPP file will hold all the important crap that you ned
+    * The CPP file will hold all the important crap that you need
 
     ``` c++
     #include <iostream.h>
     #include <stdlib.h>
     #include "point.h"
+    // The '< >' tells you it is a system file
+    // The '""' tells you that it is in the local directory
 
     int main(){
         // We're creating the objects. Instancing them
@@ -61,7 +66,8 @@
         point p2;
 
         // Now they're doing something
-        p1.init(-1.0, 0.8);
+        p1.setPosition(-1.0, 0.8);
         
         }
     ```
+
