@@ -1,0 +1,126 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="GENERATOR" content="Mozilla/4.79 [en] (Windows NT 5.0;
+      U) [Netscape]">
+    <title>Assignment 2 - The Sequence Class (Ch 3)</title>
+  </head>
+  <body>
+    <b><font size="+3">Computer Science </font><font face="Helvetica,
+        Arial, sans-serif">City College of New York</font></b>
+    <br>
+    <font size="+1">&nbsp; CSc21200</font> <font size="+1">Data Structures</font>
+    <hr noshade="noshade">
+    <h2> Programming Assignment 2:</h2>
+    <h2> <u>Implement and Test the sequence Class Using a Fixed-Sized Array (Chapter 3)</u></h2>
+    <b>Modified from projects of Chapter&nbsp; 3&nbsp; at
+      www.cs.colorado.edu/~main/projects/</b> <br>
+    <b>of Data Structures and Other Objects Using C++&nbsp; by Michael Main
+      and Walter Savitch</b>
+    <h2>
+      <hr></h2>
+    <dl>
+      <dt> <b>The Assignment:</b></dt>
+      <dd> You will implement and test the sequence class using an array
+        to
+        store the sequence's items.</dd>
+      <dt> <b>Purposes:</b></dt>
+      <dd> Ensure that you can write a small class that uses an array as
+        a
+        private member variable.</dd>
+      <dd> Familiarize yourself with the sequence container class (which
+        may
+        also be part of future assignments).</dd>
+      <dd> Give us a chance to evaluate your programming skills on a
+        small
+        class.</dd>
+      <dt> <b>Before Starting:</b></dt>
+      <dd> Read all of Chapter 3.</dd>
+      <dt> <b>Due Date:</b></dt>
+      <dd> Monday, March 4, 2013 before midnight. If you have problems, late work
+	  will be accepted on Tuesday with no penalties.
+          Late work may be submitted on Wednesday or Thursday&nbsp; with 10% penalty per day.
+	  No work will be accepted after Thursday.</dd>
+      <dt> <b>How to Turn In:</b></dt>
+      <dd> Pack your files in a WinZip file (Windows) or tar file (Unix).
+	Attach the file in your email with "<b>CSC212 Assignment 2</b>"
+          in your message <b>Subject</b> line, send it to the TA at 
+	<a href="mailto:ccny.cs212@gmail.com">ccny.cs212@gmail.com</a>.</dd>
+        <dd> DO NOT send your executable files.</dd>
+        <dd> Only one submission per group. It doesn't matter which group member submits
+        it as long as the names of both group members are on the source files.</dd>
+      <dt> <b>Files that you must write and turn in:</b></dt>
+      <ol>
+        <li> <tt>sequence1.h:</tt> The header file for the sequence
+          class.
+          Actually, you don't have to write much of this file. Just start with
+	  <a href="http://www-cs.engr.ccny.cuny.edu/%7Ewolberg/cs212/hw/hw2/sequence1.h">our version </a>and add your name and other
+          information at the top. Also, decide on appropriate private member
+          variables, an declare these in the sequence class definition at the
+          bottom of the header file.
+	  If some of your member functions are implemented as inline functions,
+          then you may put those implementations in this file too.</li>
+        <li> <tt>sequence1.cpp:</tt> The implementation file for this
+          first sequence class. You will write all of this file, which will
+          have the implementations of all the sequence's member functions.</li>
+      </ol>
+      <dt> <b>Other files that you may find helpful:</b></dt>
+      <ol>
+        <li> <tt><a href="http://www-cs.engr.ccny.cuny.edu/%7Ewolberg/cs212/hw/hw2/sequence_test.cpp">sequence_test.cpp</a></tt>
+          A simple interactive test program.</li>
+        <li> <tt><a href="http://www-cs.engr.ccny.cuny.edu/%7Ewolberg/cs212/hw/hw2/sequence_exam.cpp">sequence_exam.cpp:</a></tt>
+          A non-interactive test program that will be used to grade the correctness
+          of your sequence class.</li>
+      </ol>
+    </dl>
+    <hr>
+    <h3> The sequence Class Using a Fixed-Sized Array<br>
+      Discussion of the Assignment</h3>
+    Many of the features of this class are similar to the <b>bag</b>
+    class
+    from Section 3.1, so start by thoroughly reading Section 3.1 and pay
+    attention to new features such as <i>static constant members</i>
+    and
+    the use of a <i>typedef</i>. The sequence class itself is discussed
+    in
+    Section 3.2 of the class text. Notice how the sequence differs from
+    a
+    bag (see page 119). The interactive test program <tt><a href="http://www-cs.engr.ccny.cuny.edu/%7Ewolberg/cs212/hw/hw2/sequence_exam.cpp">sequence_exam.cpp</a></tt>&nbsp; is
+    discussed in Section 3.3 of the class text.
+    <p>Start by declaring the sequence's private member variables in
+      sequence.h. Then write the invariant of your ADT at the top of
+      sequence1.cpp. The invariant describes precisely how all of your
+      private member variables are used. All of the member functions
+      (except for the constructor) may count on the invariant being true when
+      the member function is activated. And all of the member functions are
+      responsible for ensuring that the invariant is true when the function returns. </p>
+    <p>As always, do your work in small pieces. For example, my first
+      version of the sequence had only a constructor, start, insert, advance,
+      and current. My other member functions started out as stubs. </p>
+    <p>Use the interactive test program and a debugger to track down errors
+      in your implementation. If you have an error, <i>do not start making
+        changes until you have identified the cause of the error.</i> </p>
+    <p>The ability to initialize and use a static member constant within
+        the class definition is a relatively new feature. If you have an older
+        compiler that does not support static const members, then you may use
+    </p>
+    <p><i>enum {CAPACITY = 30};</i> </p>
+    <p>instead of </p>
+    <p><i>static const size_type CAPACITY = 30;</i> </p>
+    <p>After this definition, the name bag::CAPACITY is defined to have the
+	integer value 30. Although this is not the intended use of an
+        enum definition, the result is the same as using a static member
+        constant (see more discussions on page 99 in the textbook).<br>
+    </p>
+    <hr> <br>
+    <a href="http://www-cs.engr.ccny.cuny.edu/%7Ewolberg/">George Wolberg</a>
+    ( <a href="mailto:wolberg@cs.ccny.cuny.edu">wolberg@cs.ccny.cuny.edu</a> ),
+    2013<br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+
+
+</body></html>
